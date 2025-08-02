@@ -1,4 +1,4 @@
-'''#1.Find the maximum and minimum element in a list
+#1.Find the maximum and minimum element in a list
 n = input("enter the len of the list:")
 my_list = list(map(int,input("enter the element of the list:").split()))
 print(max(my_list),min(my_list))
@@ -24,7 +24,7 @@ l1 = [2,3,4,5,6,7,4,4,3,3,2,7,7]
 l1.sort()
 for i in set(l1):
     count = l1.count(i)
-    print(f"freq of {i}:{count}")'''
+    print(f"freq of {i}:{count}")
 
 #5.Find the second largest element in a list
 l = [2,3,4,5,6,7,7,2,4,9,9]
@@ -71,3 +71,4 @@ print("list of odd no:", odd_list)
 l = [2,6,8,9,10,5,34,23,11]
 print("no at even indices",l[::2])
 print("no at odd indices",l[1::2])
+
