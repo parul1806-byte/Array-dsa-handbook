@@ -24,7 +24,7 @@ l1 = [2,3,4,5,6,7,4,4,3,3,2,7,7]
 l1.sort()
 for i in set(l1):
     count = l1.count(i)
-    print(f"freq of {i}:{count}")'''
+    print(f"freq of {i}:{count}")
 
 #5.Find the second largest element in a list
 l = [2,3,4,5,6,7,7,2,4,9,9]
@@ -71,3 +71,54 @@ print("list of odd no:", odd_list)
 l = [2,6,8,9,10,5,34,23,11]
 print("no at even indices",l[::2])
 print("no at odd indices",l[1::2])
+
+#11.Rotate a list to the right/left by K positions
+#12.Find common elements between two lists
+l1 = [2,3,4,5,6]
+l2 = [3,4,5,7]
+for i in l1:
+    if i in l2:
+        print(i)
+
+#13.Find the first repeating and first non-repeating element
+# for frist repeating element
+arr = [3,4,5,2,3,4,1,2]
+arr1 = set()
+for i in arr:
+    if i in arr1:
+        print(i)
+        break
+    else:
+        arr1.add(i)
+# for non repeating element:
+arr = [3,4,5,2,3,4,1,2]
+for i in arr:
+    if arr.count(i) == 1:
+        print(i)
+        break
+
+#14.Split a list into two halves
+n = int(input("enter the no:"))
+a = []
+for i in range(n):
+    num = int(input("enters the no's:"))
+    a.append(num)
+##   spliting
+hlaf = len(a)//2
+print(a[hlaf::])
+print(a[:hlaf])
+'''
+#15.Find pairs in the list that sum to a given value / sum of two
+# arr = [2,3,4,5,8] , target = 7
+arr = [2,3,4,5,8]
+for i in range(len(arr)):
+    for j in range(i+1,len(arr)):
+        if arr[i] + arr[j] == 7:
+            print(i,j)
+            
+
+
+
+
+
+        
